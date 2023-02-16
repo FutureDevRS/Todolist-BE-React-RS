@@ -190,7 +190,7 @@ def delete_task(id):
    
     logging.debug(id)
     task = db.session.query(Tasks).filter(Tasks.id == id).first()
-   
+#    something different for commit
     
     db.session.delete(task)
     db.session.commit()
