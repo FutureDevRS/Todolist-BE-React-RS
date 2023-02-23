@@ -56,6 +56,7 @@ user_schema = UserSchema()
 multiple_user_schema = UserSchema(many=True)
 
 
+
 @app.route('/user/add', methods=['POST'])
 def add_user():
     if request.content_type != 'application/json':
